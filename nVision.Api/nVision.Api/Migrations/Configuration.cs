@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
 using nVision.Api.Models.dataaccess;
@@ -31,6 +32,8 @@ namespace nVision.Api.Migrations
             {
                 Pin = "1478", CardNumber = "123456789",Bloacked = false
             });*/
+
+          
         }
     }
 }

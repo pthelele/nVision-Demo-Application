@@ -186,6 +186,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AuthenticationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -200,12 +201,24 @@
     <Compile Include="Migrations\201703251207101_AddNumberOfFailedLogging.Designer.cs">
       <DependentUpon>201703251207101_AddNumberOfFailedLogging.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703251445273_AddAccount.cs" />
+    <Compile Include="Migrations\201703251445273_AddAccount.Designer.cs">
+      <DependentUpon>201703251445273_AddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703251511426_AddAccountName.cs" />
+    <Compile Include="Migrations\201703251511426_AddAccountName.Designer.cs">
+      <DependentUpon>201703251511426_AddAccountName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\accountHandler\AccountWorkFlow.cs" />
     <Compile Include="Models\AuthenticationViewModel.cs" />
     <Compile Include="Models\authentication\Authentication.cs" />
     <Compile Include="Models\dataaccess\DatabeseContext.cs" />
+    <Compile Include="Models\interfaces\IAccountWorkFlow.cs" />
     <Compile Include="Models\interfaces\IAuthenticateWorkFlow.cs" />
+    <Compile Include="Models\models\Account.cs" />
     <Compile Include="Models\models\Card.cs" />
+    <Compile Include="Models\responses\AccountResponse.cs" />
     <Compile Include="Models\responses\AuthenticationResponse.cs" />
     <Compile Include="Models\stubs\AuthenticateWorkFlow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -266,6 +279,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703251207101_AddNumberOfFailedLogging.resx">
       <DependentUpon>201703251207101_AddNumberOfFailedLogging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703251445273_AddAccount.resx">
+      <DependentUpon>201703251445273_AddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703251511426_AddAccountName.resx">
+      <DependentUpon>201703251511426_AddAccountName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

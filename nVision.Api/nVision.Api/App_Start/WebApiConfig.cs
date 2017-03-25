@@ -5,6 +5,7 @@ using System.Web.Http;
 using System.Web.Http.Filters;
 using Microsoft.Practices.Unity;
 using nVision.Api.App_Start;
+using nVision.Api.Models.accountHandler;
 using nVision.Api.Models.authentication;
 using nVision.Api.Models.interfaces;
 using nVision.Api.Models.stubs;
@@ -20,6 +21,7 @@ namespace nVision.Api
             var container = new UnityContainer();
 
             container.RegisterType<IAuthenticateWorkFlow, Authentication>(new HierarchicalLifetimeManager());
+            container.RegisterType<IAccountWorkFlow, AccountWorkFlow>(new HierarchicalLifetimeManager());
 
             config.DependencyResolver = new UnityResolver(container);
 

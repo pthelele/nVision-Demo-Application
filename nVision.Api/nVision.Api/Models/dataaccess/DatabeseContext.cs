@@ -13,6 +13,13 @@ namespace nVision.Api.Models.dataaccess
         {
             
         }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<Card>().HasMany(e =>e.);
+        }
+
         public DbSet<Card> Cards { get; set; }
+        public DbSet<Account> Accounts { get; set; }
     }
 }
