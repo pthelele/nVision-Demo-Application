@@ -1,0 +1,36 @@
+﻿    <div class="form-horizontal" ng-controller="AuthenticateController">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <input class="form-control" placeholder="card number ...." ng-model="cardNumber" /><br/>
+    <input class="form-control" placeholder="pin ...." ng-model="pin"/>
+                    
+        
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10"><br />
+            <input type="submit" value="Enter" class="btn btn-success" ng-click="authenticate()"/>
+        </div>
+    </div>
+</div>
+
+<div id="errorModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:#d9534f; color:white; text-align:center;">
+                <h3 class="modal-title">Error</h3>
+            </div>
+            <div class="modal-body" id="errorModalDiv">
+              @* <label id="error_body"></label>*@
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
