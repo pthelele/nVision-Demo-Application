@@ -10,5 +10,7 @@ namespace nVision.Api.Models.responses
         public string ResponseMessage { get; set; }
         public bool Status { get; set; }
         public bool Blocked { get; set; }
+
+        public Guid CardId { get; set; }
     }
 }
